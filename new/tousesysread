@@ -1,0 +1,24 @@
+To use the R system:
+
+r
+
+Copy
+# Load attack data
+data <- read_csv("attack_data.csv")
+
+# Create threat model
+model <- create_threat_model(data)
+
+# Analyze access logs
+logs <- read_csv("access_logs.csv")
+analysis <- analyze_access_logs(logs)
+To use the C# system:
+
+csharp
+
+Copy
+var monitor = new NetworkMonitor(config, logger);
+var threats = await monitor.MonitorTrafficAsync();
+
+var iam = new IAMSystem(iamConfig, logger);
+await iam.AssignPermissionAsync("user1", "resource1", PermissionLevel.Read);
